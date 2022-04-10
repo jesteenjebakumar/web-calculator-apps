@@ -20,17 +20,22 @@ console.log("n value"+n);
   console.log(amount);
  var principal_1 = parseFloat(p);
  var rate = parseFloat(r);
- var year_1 = parseFloat(n);
-  CI = p*(Math.pow(principal_1*(1+rate/100),year_1));
+ var year_1 = parseFloat(year);
+ console.log(year_1);
+ console.log(rate);
+ console.log(principal_1);
+  CI = principal_1*(Math.pow((1+rate/100),year_1));
 //   outputspan.innerHTML = ci;
-console.log("n value "+n);
-console.log("princlepal"+ principal_1 );
-console.log("rate"+ rate );
-console.log("year"+ year_1 );
+// console.log("n value "+n);
+// console.log("princlepal"+ principal_1 );
+// console.log("rate"+ rate );
+// console.log("year"+ year_1 );
 // console.log(amount);
 // amount=amount/n;
-  CI=amount-principal;
-  CI=parseInt(CI);
+console.log(CI);
+  CI=CI-principal;
+  // CI=parseInt(CI);
+  // CI=Math.floor(CI)
 console.log(CI);
 
 }
@@ -47,10 +52,10 @@ var amount=p*(1+r/200);
 let principal_1 = parseFloat(p);
 let rate = parseFloat(r);
 let year_1 = parseFloat(n*2);
-CI = p*(Math.pow(principal_1*(1+rate/100),year_1));
+CI = principal_1*(Math.pow((1+rate/100),year_1));
 // console.log(CI);
-CI=amount-principal;
-result_1=Math.floor(CI);
+CI=CI-principal;
+result_1=CI;
 console.log(CI);
 }
 // halflycom(18000,2,10)
