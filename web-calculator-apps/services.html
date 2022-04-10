@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+     <link rel="stylesheet" href="./tailwind.css">
+</head>
+<body class="p-5">
+    <section class="p-3 bg-purple-400 container mx-auto"><p class="text-5xl text-center text-white font-semibold"> our services</p>
+    <p class="text-4xl mt-5 p-3 text-center text-white ">how was the our services it is good or bad please give a feed back </p>
+    <div id="form">
+        <div class="inputbox bg-white mb-5  flex-wrap  p-3 border-2 border-purple-400  w-full lg:w-1/2 flex flex focus-within:border-pink-400">
+            <label  class="text-3xl lg:text-3xl w-full lg:w-1/2  text-center lg:justify-start  my-auto text-red-400">enter the name:</label>
+            <input type="text" required class="p-5  w-full lg:w-1/2  text-3xl  outline-none" >
+        </div>
+        <div class="inputbox bg-white p-3  border-2 border-purple-400 w-full flex lg:text-start lg:justify-start lg:w-1/2  focus-within:border-pink-400">
+            <label for="" class="text-3xl order-1 w-full lg:w-1/2 text-center lg:text-start  my-auto text-red-400">enter the feedback:</label>
+            <textarea type="text" cols="20 " required rows="10" title="clear" class="p-5 w-full lg:w-1/2  order-2 text-3xl  outline-none" ></textarea>
+        </div>
+    </div> 
+    <div class="flex p-5 w-1/2 ">
+        <button id="btn" class="bg-red-500 border-2 border-pink-500 hover:border-red-500 hover:bg-transparent text-white rounded text-4xl mx-auto">sumbit</button>
+    </div>
+    <div class="w-full  flex">
+
+        <button class="text-white hover:text-red-500 text-lg p-3  ml-auto font-semibold ml-auto"><a href="./ownweb.html">back to home page</a></button>
+    </div>
+    </section>
+</body>
+<style>
+      ::selection{
+              background-color: rgb(255, 157, 255);
+            }
+</style>
+<script>
+
+    var getting=document.querySelector('input');
+    var text=document.querySelector('textarea');
+let btn=document.getElementById('btn');
+let test=false;
+let name=false;
+
+
+btn.onclick=()=>{
+
+    if( getting.value.length==0 ){
+                     alert('please enter the name ')
+    name=true;
+    }
+    else if(text.value.length==0){
+        alert('please enter the feedback ')
+    }
+    else{
+        alert('thank you for your feedback '+getting.value);
+
+    }
+}
+</script>
+
+</html>
