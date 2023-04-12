@@ -55,7 +55,7 @@ let year_1 = parseFloat(n*2);
 CI = principal_1*(Math.pow((1+rate/100),year_1));
 // console.log(CI);
 CI=CI-principal;
-result_1=Math.floor(CI) +p;
+result_1=Math.floor(CI) +principal_1;
 console.log(CI);
 }
 // halflycom(18000,2,10)
@@ -63,5 +63,6 @@ function simpleinterestwo(p,n,r){
   // p*n*R/100
    let formula=p*n*r;
    SI=formula/100+principal_1;
+     alert("updated")
 
 }
