@@ -35,7 +35,7 @@ console.log("n value"+n);
 console.log(CI);
   CI=CI-principal;
   // CI=parseInt(CI);
-   CI=Math.floor(CI)
+   CI=Math.floor(CI)+principal_1;
 console.log(CI);
 
 }
@@ -55,13 +55,13 @@ let year_1 = parseFloat(n*2);
 CI = principal_1*(Math.pow((1+rate/100),year_1));
 // console.log(CI);
 CI=CI-principal;
-result_1=Math.floor(CI) ;
+result_1=Math.floor(CI) +p;
 console.log(CI);
 }
 // halflycom(18000,2,10)
 function simpleinterestwo(p,n,r){
   // p*n*R/100
    let formula=p*n*r;
-   SI=formula/100;
+   SI=formula/100+principal_1;
 
 }
