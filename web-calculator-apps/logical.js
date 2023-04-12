@@ -62,7 +62,8 @@ console.log(CI);
 function simpleinterestwo(p,n,r){
   // p*n*R/100
    let formula=p*n*r;
-   SI=formula/100+ p;
-     alert("updated")
+   SI=formula/100+ p ;
+     
+     
 
 }
