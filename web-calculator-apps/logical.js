@@ -35,7 +35,8 @@ console.log("n value"+n);
 console.log(CI);
   CI=CI-principal;
   // CI=parseInt(CI);
-   CI=Math.floor(CI)+principal;
+   CI=Math.floor(CI);
+     CI=CI+principal;
 console.log(CI);
 
 }
