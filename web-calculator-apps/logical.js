@@ -67,7 +67,7 @@ function simpleinterestwo(p,n,r){
    SI=formula/100 ;
       final= SI+p;
      
-    SI=paurseInt(final);
+    SI=parseInt(final);
      
      
      
