@@ -65,7 +65,7 @@ function simpleinterestwo(p,n,r){
    let formula=p*n*r;
      
    SI=formula/100 ;
-     int final=SI+p;
+     int final= parseInt(SI+p);
      
     SI=final ;
      
