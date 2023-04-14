@@ -41,7 +41,7 @@ console.log(CI);
 
 }
 // annualcom(18000,2,10)
-function halflycom( p,r,n){
+function halflrinycom( p,r,n){
 
   
 console.log("n value"+n);
@@ -64,7 +64,7 @@ function simpleinterestwo(p,n,r){
   // p*n*R/100
    let formula=p*n*r;
    SI=formula/100 ;
-   SI=SI+p;
+   SI=SI+principal;
      
      
 
